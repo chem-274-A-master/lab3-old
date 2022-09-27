@@ -1,7 +1,7 @@
 # CHEM 274A - Lab 3
 September 27, 2022
 
-Today, we will be focusing on Quantum Mechanics Tools using Python, matplotlib, numpy, and the `psi4` library.
+Today, we will be focusing on learning about basic quantum mechanics calculations using the [Psi4 Quantum Chemistry package](https://psicode.org/). This lab uses Python, matplotlib, numpy, and the `psi4` library.
 
 ## Objectives
 - Analyze and optimize the geometry of a molecule using PsiAPI
@@ -12,21 +12,18 @@ Today, we will be focusing on Quantum Mechanics Tools using Python, matplotlib, 
 
 ## Setup
 1. Clone this repo!
-2. Create a `conda` environment.
-  a. Open a Terminal on Mac/Linux or Anaconda Prompt on Windows.
-  b. Type the following prompt and hit Enter.
+2. Create a `conda` environment using the provided `conda-env.yaml` file. We recommend using the `mamba` package manager to create this environment
 
-### Windows command
-```
-conda install -c raimis -c psi4 -c conda-forge psi4=1.3.2
+```bash
+conda install mamba
+mamba env create -f conda-env.yaml
 ```
 
-### Mac/Linux command
-```
-conda install psi4 psi4-rt python=3.7 -c psi4
-```
+3. This will install PsiAPI in an environment called `qm-tools`. You can activate the `qm-tools` by doing
 
-3. This will install PsiAPI in an environment called `qm-tools`.
+```bash
+conda activate qm-tools
+```
 
 ## Exercise
 Use the notebook `qm_lab3_geometry_optimization.ipynb` to explore Geometry Optimization. Follow the instructions in the notebook.
